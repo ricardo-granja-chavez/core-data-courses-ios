@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Agregar Palabras-->
         <scene sceneID="Zgd-JQ-vj4">
             <objects>
                 <tableViewController id="8Oo-TO-uQt" customClass="TableViewController" customModule="GuardaPalabras" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,13 @@
                             <outlet property="delegate" destination="8Oo-TO-uQt" id="0ac-i2-7VS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="PlX-hJ-RXv"/>
+                    <navigationItem key="navigationItem" title="Agregar Palabras" id="PlX-hJ-RXv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sKq-0y-lMu">
+                            <connections>
+                                <action selector="agregarPalabras:" destination="8Oo-TO-uQt" id="f50-lw-bco"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ugg-Bl-Mx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
