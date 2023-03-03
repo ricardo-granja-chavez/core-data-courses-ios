@@ -14,6 +14,17 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let manageContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Lista")
+        
+        do {
+            self.managedObjects = try manageContext.fetch(fetchRequest)
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
     }
 
     // MARK: - Table view data source
@@ -55,7 +66,9 @@ class TableViewController: UITableViewController {
         let manageContext = appDelegate.persistentContainer.viewContext
         guard let entity = NSEntityDescription.entity(forEntityName: "Lista", in: manageContext) else { return }
         let managedObject = NSManagedObject(entity: entity, insertInto: manageContext)
+        
         managedObject.setValue(palabra, forKey: "palabra")
+        appDelegate.saveContext()
         
         self.managedObjects.append(managedObject)
     }
