@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var clasificacionLabel: UILabel!
     @IBOutlet weak var numeroPruebasLabel: UILabel!
     @IBOutlet weak var ultimaPruebaLabel: UILabel!
+    
+    var manageContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
