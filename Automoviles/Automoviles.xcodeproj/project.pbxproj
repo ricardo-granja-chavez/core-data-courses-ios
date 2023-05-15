@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1DD3084929BD183A003DA2B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3084829BD183A003DA2B2 /* AppDelegate.swift */; };
-		1DD3084B29BD183A003DA2B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3084A29BD183A003DA2B2 /* SceneDelegate.swift */; };
 		1DD3084D29BD183A003DA2B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3084C29BD183A003DA2B2 /* ViewController.swift */; };
 		1DD3085029BD183A003DA2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD3084E29BD183A003DA2B2 /* Main.storyboard */; };
 		1DD3085329BD183A003DA2B2 /* Automoviles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3085129BD183A003DA2B2 /* Automoviles.xcdatamodeld */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		1DD3084529BD183A003DA2B2 /* Automoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD3084829BD183A003DA2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DD3084A29BD183A003DA2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1DD3084C29BD183A003DA2B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DD3084F29BD183A003DA2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DD3085229BD183A003DA2B2 /* Automoviles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Automoviles.xcdatamodel; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				1DD3084829BD183A003DA2B2 /* AppDelegate.swift */,
-				1DD3084A29BD183A003DA2B2 /* SceneDelegate.swift */,
 				1DD3084C29BD183A003DA2B2 /* ViewController.swift */,
 				1DD3084E29BD183A003DA2B2 /* Main.storyboard */,
 				1DD3085429BD183C003DA2B2 /* Assets.xcassets */,
@@ -156,7 +153,6 @@
 				1DD3086329BD3DDE003DA2B2 /* Automovil+CoreDataClass.swift in Sources */,
 				1DD3084D29BD183A003DA2B2 /* ViewController.swift in Sources */,
 				1DD3084929BD183A003DA2B2 /* AppDelegate.swift in Sources */,
-				1DD3084B29BD183A003DA2B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

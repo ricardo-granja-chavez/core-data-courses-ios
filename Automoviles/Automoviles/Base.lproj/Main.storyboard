@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nYJ-lQ-8mn">
-                                <rect key="frame" x="65" y="127" width="245" height="128"/>
+                                <rect key="frame" x="65" y="130" width="245" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nYJ-lQ-8mn" secondAttribute="height" multiplier="245:128" id="P4C-r2-bsI"/>
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-Ah-rLJ">
-                                <rect key="frame" x="65" y="270" width="245" height="32"/>
+                                <rect key="frame" x="65" y="273" width="245" height="32"/>
                                 <segments>
                                     <segment title="Mazda"/>
                                     <segment title="Honda"/>
@@ -34,7 +35,7 @@
                                 </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TkT-go-sR2">
-                                <rect key="frame" x="15" y="341" width="345" height="96.333333333333314"/>
+                                <rect key="frame" x="15" y="344" width="345" height="96.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Modelo Automovil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acy-h1-JyA">
                                         <rect key="frame" x="81.333333333333329" y="0.0" width="182.33333333333337" height="20.333333333333332"/>
@@ -63,7 +64,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-Al-XPP">
-                                <rect key="frame" x="100" y="497.33333333333326" width="175" height="107"/>
+                                <rect key="frame" x="100" y="500.33333333333326" width="175" height="107"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMD-y1-pRe">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="45"/>
@@ -102,7 +103,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="calificar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtc-QY-6wf"/>
+                                            <action selector="qualify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtc-QY-6wf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -126,12 +127,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="clasificacionLabel" destination="nHt-2X-B2u" id="LBF-N3-8pU"/>
-                        <outlet property="fotografiaAutomovil" destination="nYJ-lQ-8mn" id="8zM-ZW-Iv6"/>
-                        <outlet property="marcasSegmentedControl" destination="vzC-Ah-rLJ" id="MVT-su-Yi4"/>
-                        <outlet property="modeloLabel" destination="Acy-h1-JyA" id="3qR-tX-0lB"/>
-                        <outlet property="numeroPruebasLabel" destination="KZQ-Te-Phs" id="bT8-pW-hCc"/>
-                        <outlet property="ultimaPruebaLabel" destination="Shn-BR-ATf" id="Lne-hG-jQB"/>
+                        <outlet property="brandSegmentedControl" destination="vzC-Ah-rLJ" id="MVT-su-Yi4"/>
+                        <outlet property="carPictureImageView" destination="nYJ-lQ-8mn" id="8zM-ZW-Iv6"/>
+                        <outlet property="lastTestLabel" destination="Shn-BR-ATf" id="Lne-hG-jQB"/>
+                        <outlet property="modelLabel" destination="Acy-h1-JyA" id="3qR-tX-0lB"/>
+                        <outlet property="numberTestsLabel" destination="KZQ-Te-Phs" id="bT8-pW-hCc"/>
+                        <outlet property="ratingLabel" destination="nHt-2X-B2u" id="LBF-N3-8pU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
